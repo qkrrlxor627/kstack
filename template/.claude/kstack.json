@@ -1,0 +1,30 @@
+{
+  "project": "{{PROJECT}}",
+  "author": "{{AUTHOR}}",
+  "criteria": {
+    "mission": "doc/criteria/mission.md",
+    "standard": "doc/criteria/standard.md",
+    "ids": "doc/criteria/ids.md"
+  },
+  "protected": ["doc/criteria/mission.md", "doc/criteria/standard.md"],
+  "local_only": [".claude", "CLAUDE.md", "doc/workClaude.md"],
+  "outputs": "outputs",
+  "test": {
+    "watch": [],
+    "ext": [".py"],
+    "cmd": "",
+    "timeout": 90
+  },
+  "bench": {
+    "health_cmd": "",
+    "run_cmd": "",
+    "results": "bench/results",
+    "summary": "{results}/{tag}_summary.csv",
+    "key": "id",
+    "ignore_cols": ["started_at"],
+    "minutes": 0
+  },
+  "presentation": {
+    "minutes": 5
+  }
+}
